@@ -5,9 +5,160 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f9f9f9 !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+a{
+  text-decoration: none !important;
+}
+
+ul {
+  margin: 0;
+  padding:0 ;
+}
+
+ul li {
+  list-style: none;
+}
+
+p{
+  font-size: 15px;
+}
+.Link-design {
+  color: white;
+}
+
+  .btn-design {
+    background-color: none;
+    width: fit-content;
+    display: flex;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #479cf2;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+.input-desgin {
+  outline: none;
+  padding: 10px 20px;
+  background: #8ea7f1;
+  margin: 15px 0;
+  border: none;
+}
+input{
+  outline:none;
+}
+::placeholder{
+  color: white;
+}
+
+.logo {
+  max-width: 
+  30px;
+}
+
+.margin-2 {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.link-design {
+  border: 1px solid black;
+}
+
+@media (max-width:450px) {
+  .search-nav {
+    max-width: 150px;
+  }
+  
+}
+.slider-design {
+  background-color: #7fbcff;
+  height: 325px;
+}
+.carousel-img>img{
+  max-height: 300px;
+}
+@media (max-width:767px) {
+  .carousel-img>img{
+    max-width: 100%;
+  }
+  
+}
+
+.category-home-view {
+  background-color: rgb(142, 166, 240);
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.category-home-view img {
+  position: relative;
+  width: 100%;
+}
+
+.HomeProducts {
+  padding: 5px;
+  background-color: white;
+  margin: 10px 0;
+}
+
+.Productcard {
+  background-color: white;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  border: none !important;
+}
+
+.brand-img {
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  margin-bottom:5px ;
+  width: 100%;
+
+}
+
+.discount-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 140px;
+  overflow: hidden;
+
+}
+.discount-style  img {
+  max-height: 130px;
+}
+
+@media(max-width:767px){
+  .login-img img {
+    display: none;
+  }
+}
+
+
+.product-details-img{
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.product-details-img img {
+  position: relative;
+}
+
+.image-gallery-svg {
+  color: black !important;
+  width:30px !important;
+  height:30px !important;
+  border-radius: 100%;
+  background-color: #f3f4f6;
 }
