@@ -1,7 +1,6 @@
 {
   "name": "full-ecommerce",
   "version": "0.1.0",
-  "homepage": "https://Hamada-Elsayed.github.io/E-commerce",
   "proxy": "https://backend-46p3.vercel.app",
 
   "private": true,
