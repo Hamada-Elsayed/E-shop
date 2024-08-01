@@ -2,7 +2,12 @@ import React from 'react'
 import {  Container,Col,Row } from 'react-bootstrap'
 import loginimg from '../../Assets/login.webp'
 import { Link } from 'react-router-dom'
+import LoginHook from '../../hook/auth/LoginHook'
+import { ToastContainer } from 'react-toastify';
+
 const Login = () => {
+
+  const [email,password,onchangeemail,onchangepassword,onSubmit] = LoginHook();
   return (
     <div>
     <Container >
@@ -11,10 +16,10 @@ const Login = () => {
       <div>
           <form className='d-grid'>
               <label>تسجيل الدخول </label>
-              <input className='input-desgin' type='e-mail' placeholder='الايميل' />
-              <input className='input-desgin' type='password' placeholder='كلمه السر' />
-              <button className='btn-design'> تسجيل الدخول</button>
-              <label className='d-flex justify-content-between'>   
+              <input value={email} onChange={onchangeemail} className='input-desgin' type='e-mail' placeholder='الايميل...' />
+              <input value={password} onChange={onchangepassword} className='input-desgin' type='password' placeholder='كلمه السر...' />
+              <button onClick={onSubmit} className='btn-design'> تسجيل الدخول</button>
+              <label className='d-flex justify-content-end'>   
                     <p>ليس لديك حساب ؟</p>
                     <Link to='/register'><span>  انشاء حساب</span></Link>
               </label>
@@ -29,6 +34,8 @@ const Login = () => {
       </Col>
 
     </Row>
+    <ToastContainer />
+
     </Container>
     </div>
   )

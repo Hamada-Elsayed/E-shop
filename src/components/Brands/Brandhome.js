@@ -7,13 +7,10 @@ const Brandhome = () => {
   return (
     <div className='HomeProducts'>
     <Container>
-      <Subtitle title='اشهر الماركات' btnname="المزيد" titlepath='/allbrands'/>
+      <Subtitle title=' الماركات' btnname="المزيد" titlepath='/allbrands'/>
       <Row className='d-flex'>
       <Brandcard/>
-      <Brandcard/>
-      <Brandcard/>
-      <Brandcard/>
-      <Brandcard/>
+  
 
       </Row>
 

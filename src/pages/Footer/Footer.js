@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container,Row,Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import logo from '../../Assets/logo.png'
+import logo from '../../Assets/ecommerce-logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook,faTwitter,faWhatsapp,faInstagram,faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -11,8 +11,8 @@ const Footer = () => {
     <Container>
         <Row className='p-4'>
             <Col className='d-grid text-end' lg='4'>
-                  <Link to={'/'}><img className='logo' src={logo} alt=""/></Link>
-                  <Link to={'/'} className='Link-design'>الرئسية</Link>
+                  <Link to={'/E-commerce'}><img className='logo' src={logo} alt=""/></Link>
+                  <Link to={'/E-commerce'} className='Link-design'>الرئسية</Link>
                   <Link to={'/products'} className='Link-design'>المنتجات</Link>
                   <Link to={'/categores'} className='Link-design'>التصنيفات</Link>
                   <Link className='Link-design'>عروضنا</Link>

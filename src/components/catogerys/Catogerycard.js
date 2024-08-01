@@ -1,25 +1,22 @@
 import React from 'react'
-import { Col } from 'react-bootstrap'
-import category1 from '../../Assets/category1.png'
+import { Link } from 'react-router-dom'
 
-const Catogery = () => {
+
+const Catogerycard = ({item}) => {
+
+
+
+
   return (
-      <Col
-      xs="6"
-      sm="6"
-      md="4"
-      lg="2"
-      >
-      <div className='d-grid justify-content-start'>
-      <div className='category-home-view'>
-        <img src={category1} alt='#' />
-      </div>
-      <p>  اوفر سايز</p>
-      </div>
-
-
-      </Col>
+        <Link to={`/catpro/${item._id}`} style={{color:'black'}}>
+        <div key={item._id} >
+            <div className='category-home-view'>
+                <img src={item.image} alt='#' />
+            </div>
+            <p> {item.name} </p>
+        </div>
+        </Link>
   )
 }
 
-export default Catogery
+export default Catogerycard

@@ -3,17 +3,18 @@ import Subtitle from '../utility/Subtitle'
 import Productcard from './Productcard'
 import { Container,Row } from 'react-bootstrap'
 
-const HomeProducts = () => {
+const HomeProducts = ({products,title,btnname,titlepath}) => {
   return (
     <div className='HomeProducts'>
     <Container>
-      <Subtitle title="الاكثر مبيعا" btnname="المزيد" titlepath="/products"/>
+    {
+      products ? ( <Subtitle title= {title} btnname={btnname} titlepath={titlepath}/>):null
+    }
       <Row className='d-flex'>
-      <Productcard/>
-      <Productcard/>
-      <Productcard/>
-      <Productcard/>
-      <Productcard/>
+      {
+        products ?( products.map((item,index)=> <Productcard item={item} key= {index}/>) ):null
+      }
+      
       </Row>
     </Container>
     </div>

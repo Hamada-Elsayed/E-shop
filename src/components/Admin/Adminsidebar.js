@@ -2,19 +2,25 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const Adminsidebar = () => {
   return (
-    <div style={{minHeight:'400px'}} className='py-2 bg-white my-4'>
-        <ul>
+    <div style={{minHeight:'400px'}}  className=' mt-4 bg-white'>
+        <ul className='d-grid justify-content-center   text-center admin-sidebar'>
             <li>
-                <Link>ادارة جميع الطلبات</Link>
+                <Link to={'/admin/orders'}>ادراة  الطلبات </Link>
             </li>
             <li>
-                <Link>ادراة جميع المنتجات </Link>
+                <Link to={'/admin/productmangment'} >ادراة  المنتجات </Link>
             </li>
             <li>
-                <Link>اضافة صنف  </Link>
+                <Link to={'/admin/addcategory'} >اضافة تصنيف  </Link>
             </li>
             <li>
-                <Link>اضافة ماركة </Link>
+                <Link to={'/admin/addcategory'} >اضافة تصنيف فرعي </Link>
+            </li>
+            <li>
+                <Link to={'/admin/addbrand'}>اضافة ماركة </Link>
+            </li>
+            <li>
+                <Link to={'/admin/addproduct'}> اضافة منتج جديد </Link>
             </li>
         </ul>
     </div>

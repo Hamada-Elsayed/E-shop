@@ -7,12 +7,13 @@ import Productdescription from '../../components/Products/Productdescription'
 import Rate from '../../components/rate/Rate'
 
 const Productdetailspage = () => {
+
   return (
     <div>
     <Categoryheader/>
     <Container className='mt-4'>
     <Row className='d-flex mb-4' >
-          <Productdetails/>
+          <Productdetails />
           <Productdescription/>
     </Row>
           <Rate/>

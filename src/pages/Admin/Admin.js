@@ -1,25 +1,32 @@
-import React from 'react'
 import { Container, Row,Col } from 'react-bootstrap'
 import Adminsidebar from '../../components/Admin/Adminsidebar'
-import Adminaddcategory from '../../components/Admin/Adminaddcategory'
-import { Routes,Route } from 'react-router-dom';
-import Admineditproducts from '../../components/Admin/Admineditproducts';
+import AdminProductCard from '../../components/Admin/AdminProductCard'
+import { GetProductHook } from '../../hook/product/get-product'
+import Pagination from '../../components/utility/Pagination'
+
+
 
 const Admin = () => {
+
+  const  [ , ,getproductonpress,pageCount, ] = GetProductHook();
+
   return (
     <div style={{minHeight:'700px'}}>
       <Container>
           <Row>
-                <Col lg='3'>
+                <Col lg='2'>
                     <Adminsidebar/>
+                    
                 </Col>
-                <Col className=' py-2 my-4 bg-white'  lg='9'>
-
-                <Routes>
-                      <Route path='admin/addcate' element={<Adminaddcategory/>}/>
-                      <Route path='admin/addpro' element={<Admineditproducts/>}/>
-                </Routes>
+                <Col className=' py-2 my-4'  lg='10'>
+                <AdminProductCard/>
                 </Col>
+          </Row>
+          <Row>
+          {
+            pageCount > 1 ? (<Pagination pageCount={pageCount} onPress ={getproductonpress} />):null
+          }
+              
           </Row>
       </Container>
     </div>
