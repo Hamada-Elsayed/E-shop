@@ -1,7 +1,7 @@
 {
   "name": "full-ecommerce",
   "version": "0.1.0",
-  "proxy": "https://backend-7szr8id0p-hamadas-projects-1ea8d8e6.vercel.app",
+  "proxy": "https://backend-7szr8id0p-hamadas-projects-1ea8d8e6.vercel.app/",
 
   "private": true,
   "dependencies": {
